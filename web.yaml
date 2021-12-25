@@ -3,15 +3,12 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
-  creationTimestamp: "2021-12-25T08:32:43Z"
   generation: 1
   labels:
     app: web
   name: web
   namespace: default
-  resourceVersion: "12189"
   selfLink: /apis/apps/v1/namespaces/default/deployments/web
-  uid: 6860d124-e05a-42fa-98fc-efe67a369261
 spec:
   progressDeadlineSeconds: 600
   replicas: 2
@@ -49,14 +46,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2021-12-25T08:34:01Z"
   labels:
     app: web
   name: web
   namespace: default
-  resourceVersion: "12267"
   selfLink: /api/v1/namespaces/default/services/web
-  uid: 3fca49d1-d88b-4ff7-9998-3daf4ef224d6
 spec:
   clusterIP: 10.152.183.201
   clusterIPs:
